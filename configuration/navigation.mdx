@@ -1,0 +1,97 @@
+---
+title: Navigation
+description: Organize pages into groups and tabs in the sidebar.
+---
+
+The `navigation` array in `docs.json` controls every entry in the sidebar, in the order it renders.
+
+## Groups
+
+A group is a labeled section in the sidebar containing a list of pages.
+
+```json title="docs.json"
+{
+  "navigation": [
+    {
+      "group": "Get started",
+      "pages": ["index", "quickstart"]
+    }
+  ]
+}
+```
+
+Each string in `pages` is a path to an `.mdx` file relative to the repo root, without the `.mdx` extension. Use a subfolder path for nested files: `"essentials/writing"` resolves to `essentials/writing.mdx`.
+
+## Adding a page
+
+<Steps>
+  <Step title="Create the file">
+    Add a new `.mdx` file at the path you want. Use folders to nest pages under
+    a path.
+  </Step>
+  <Step title="List it in docs.json">
+    Add the page's path to the relevant `pages` array. The order in the array
+    sets the order in the sidebar.
+  </Step>
+</Steps>
+
+## Tabs
+
+A tab is a top-level navbar entry that contains its own groups. Use tabs when the sidebar grows past one coherent set of sections — for example, separating a product guide from an API reference.
+
+```json title="docs.json"
+{
+  "navigation": [
+    {
+      "tab": "Guide",
+      "groups": [
+        {
+          "group": "Get started",
+          "pages": ["index", "quickstart"]
+        }
+      ]
+    },
+    {
+      "tab": "Reference",
+      "groups": [
+        {
+          "group": "Endpoints",
+          "pages": ["reference/create", "reference/list"]
+        }
+      ]
+    }
+  ]
+}
+```
+
+Tabs and top-level groups can mix in the same `navigation` array.
+
+## Page order
+
+The order of strings in `pages` is the order they appear in the sidebar. Reorder the array to reorder the sidebar — entries aren't sorted alphabetically.
+
+## Sidebar labels
+
+Sidebar labels come from the filename, not the page's `title` frontmatter. `connect-github.mdx` renders as **Connect GitHub** in the sidebar. To change a sidebar label, rename the file and update its path in `navigation`.
+
+<Callout type="warning">
+  Renaming a file changes its URL. Update any internal links to the page after a
+  rename.
+</Callout>
+
+## Next
+
+<Columns cols="2">
+  <Card
+    title="Theme"
+    href="/configuration/theme"
+    icon="palette"
+    description="Pick a preset and override the primary color."
+  />
+  <Card
+    title="Writing"
+    href="/essentials/writing"
+    icon="pencil"
+    description="Frontmatter, markdown, code blocks, and images."
+  />
+</Columns>

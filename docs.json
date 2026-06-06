@@ -1,0 +1,25 @@
+{
+  "name": "Bloques Starter",
+  "description": "Starter template for documentation built on Bloques.",
+  "navigation": [
+    {
+      "group": "Get started",
+      "pages": ["index", "quickstart"]
+    },
+    {
+      "group": "Essentials",
+      "pages": ["essentials/writing", "essentials/components"]
+    },
+    {
+      "group": "Configuration",
+      "pages": ["configuration/navigation", "configuration/theme"]
+    }
+  ],
+  "navbar": [
+    { "name": "Bloques", "url": "https://bloques.app" },
+    { "name": "GitHub", "url": "https://github.com/edgarlr/bloques-starter" }
+  ],
+  "theme": {
+    "preset": "default"
+  }
+}

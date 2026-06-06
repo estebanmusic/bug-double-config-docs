@@ -1,0 +1,69 @@
+---
+title: Writing
+description: Frontmatter, markdown, code blocks, and images.
+---
+
+Pages are MDX files at the root of the repo. Each file becomes a page, and nested folders become path segments. To add a new page, create a new `.mdx` file and add its path to `docs.json`.
+
+## Frontmatter
+
+Every page starts with YAML frontmatter that sets the title and description.
+
+```yaml
+---
+title: My page
+description: A one-sentence summary that shows up in search results.
+---
+```
+
+| Field         | Required | Notes                                                                 |
+| ------------- | -------- | --------------------------------------------------------------------- |
+| `title`       | yes      | Sentence case. Becomes the page heading and the browser tab title.    |
+| `description` | yes      | One sentence under 160 characters. Used for search and link previews. |
+
+## Markdown
+
+Standard markdown works. Use `##` for sections and below — the page title from frontmatter is the H1.
+
+- `**bold**` for UI labels.
+- `` `code` `` for filenames and config keys.
+- `-` for bullet lists and `1.` for numbered steps.
+- `[label](/path)` for internal links and the full URL for external links.
+
+## Code blocks
+
+Wrap code in triple backticks and tag the language right after the opening fence. Always tag the language — untagged blocks lose syntax highlighting.
+
+```json
+{
+  "name": "My docs",
+  "navigation": []
+}
+```
+
+Add a filename label by appending `title="..."` after the language tag, like `json title="docs.json"`. The label renders above the block.
+
+## Images
+
+Place images in a folder at the repo root (for example, `images/`) and reference them with a relative path. Always include alt text describing what the image shows.
+
+```md
+![Site settings panel with custom domain field](/images/settings.png)
+```
+
+## Next
+
+<Columns cols="2">
+  <Card
+    title="Components"
+    href="/essentials/components"
+    icon="component"
+    description="Built-in MDX components for richer content."
+  />
+  <Card
+    title="Navigation"
+    href="/configuration/navigation"
+    icon="settings"
+    description="Group pages and order the sidebar."
+  />
+</Columns>

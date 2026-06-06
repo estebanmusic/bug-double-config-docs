@@ -1,0 +1,81 @@
+---
+title: Theme
+description: Pick a preset, override the primary color, and add navbar links.
+---
+
+The `theme` field in `docs.json` controls the colors and dark mode of your site. The `navbar` field adds external links to the top bar.
+
+## Presets
+
+Four presets ship with Bloques. Set one with the `preset` field.
+
+- `default` — neutral grays.
+- `ocean` — cool blues.
+- `emerald` — fresh greens.
+- `rose` — warm pinks.
+
+```json title="docs.json"
+{
+  "theme": {
+    "preset": "ocean"
+  }
+}
+```
+
+Each preset defines a full light and dark palette. The dark palette is paired automatically — set the preset once and both modes work.
+
+## Primary color override
+
+Replace a preset's primary color with `primaryOverride`. The value applies to both light and dark mode.
+
+```json title="docs.json"
+{
+  "theme": {
+    "preset": "default",
+    "primaryOverride": "#10b981"
+  }
+}
+```
+
+`primaryOverride` accepts any valid CSS color: hex, `rgb()`, `hsl()`, `oklch()`, or a named color. Pick a value with enough contrast against white text — the primary color is used as a background for primary buttons.
+
+<Callout type="success">
+  Override a single color to set the brand accent without losing the preset's
+  tuned surfaces and borders.
+</Callout>
+
+## Dark mode
+
+Every preset ships with a paired dark palette, so dark mode works out of the box. The site renders a theme switch in the header with three options: **Light**, **Dark**, and **System**. The default is **System**, which follows the visitor's operating system preference.
+
+## Navbar links
+
+The `navbar` array adds external links to the top bar. Each entry takes a `name` and a `url`.
+
+```json title="docs.json"
+{
+  "navbar": [
+    { "name": "Dashboard", "url": "https://bloques.app" },
+    { "name": "GitHub", "url": "https://github.com/your-org/your-repo" }
+  ]
+}
+```
+
+Navbar links open in a new tab.
+
+## Next
+
+<Columns cols="2">
+  <Card
+    title="Navigation"
+    href="/configuration/navigation"
+    icon="settings"
+    description="Group pages, add tabs, and order the sidebar."
+  />
+  <Card
+    title="Quickstart"
+    href="/quickstart"
+    icon="rocket"
+    description="Clone this template and publish your docs in five minutes."
+  />
+</Columns>
