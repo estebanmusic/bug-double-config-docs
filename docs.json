@@ -1,6 +1,6 @@
 {
-  "name": "Bloques Starter v1",
-  "description": "Starter description.",
+  "name": "Bloques Starter v2",
+  "description": "Starter description 2",
   "navigation": [
     {
       "group": "Get started",
@@ -36,6 +36,6 @@
   ],
   "theme": {
     "preset": "rose",
-    "primaryOverride": "oklch(0.4100 0.1500 240.0000)"
+    "primaryOverride": "oklch(0.9400 0.1500 240.0000)"
   }
 }
