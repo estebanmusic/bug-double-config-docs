@@ -22,7 +22,8 @@
         "configuration/navigation",
         "configuration/theme"
       ]
-    },
+    }
+  ],
   "navbar": [
     {
       "name": "Bloques",
