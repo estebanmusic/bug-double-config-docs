@@ -4,22 +4,37 @@
   "navigation": [
     {
       "group": "Get started",
-      "pages": ["index", "quickstart"]
+      "pages": [
+        "index",
+        "quickstart"
+      ]
     },
     {
       "group": "Essentials",
-      "pages": ["essentials/writing", "essentials/components"]
+      "pages": [
+        "essentials/writing",
+        "essentials/components"
+      ]
     },
     {
       "group": "Configuration",
-      "pages": ["configuration/navigation", "configuration/theme"]
+      "pages": [
+        "configuration/navigation",
+        "configuration/theme"
+      ]
     }
   ],
   "navbar": [
-    { "name": "Bloques", "url": "https://bloques.app" },
-    { "name": "GitHub", "url": "https://github.com/edgarlr/bloques-starter" }
+    {
+      "name": "Bloques",
+      "url": "https://bloques.app"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/edgarlr/bloques-starter"
+    }
   ],
   "theme": {
-    "preset": "default"
+    "preset": "emerald"
   }
 }
