@@ -35,6 +35,7 @@
     }
   ],
   "theme": {
-    "preset": "rose"
+    "preset": "default",
+    "primaryOverride": "oklch(0.2735 0.1135 27.53)"
   }
 }
