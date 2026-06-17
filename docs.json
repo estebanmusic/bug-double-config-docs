@@ -10,11 +10,16 @@
       ]
     },
     {
-      "group": "Essentials",
+      "tab": "Test tabs convined",
+      "groups": [
+        {
+        "group": "Essentials",
       "pages": [
         "essentials/writing",
         "essentials/components"
       ]
+      }
+     ]
     },
     {
       "group": "Configuration",
