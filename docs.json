@@ -22,11 +22,10 @@
         "configuration/navigation",
         "configuration/theme"
       ]
-    }
-  ],
+    },
   {
-      "tab": "Tab mode test",
-      "groups": [
+    "tab": "Tab mode test",
+    "groups": [
         {
       "group": "Essentials",
       "pages": [
