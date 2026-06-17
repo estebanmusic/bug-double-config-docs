@@ -24,6 +24,18 @@
       ]
     }
   ],
+  {
+      "tab": "Tab mode test",
+      "groups": [
+        {
+      "group": "Essentials",
+      "pages": [
+        "essentials/writing",
+        "essentials/components"
+      ]
+    },
+      ]
+    },
   "navbar": [
     {
       "name": "Bloques",
