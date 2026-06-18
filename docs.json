@@ -13,13 +13,13 @@
       "tab": "Test tabs convined",
       "groups": [
         {
-        "group": "Essentials",
-      "pages": [
-        "essentials/writing",
-        "essentials/components"
+          "group": "Essentials",
+          "pages": [
+            "essentials/writing",
+            "essentials/components"
+          ]
+        }
       ]
-      }
-     ]
     },
     {
       "group": "Configuration",
@@ -40,7 +40,7 @@
     }
   ],
   "theme": {
-    "preset": "emerald",
+    "preset": "rose",
     "primaryOverride": "oklch(0.1400 0.3481 0.0000 / 0.78)"
   }
 }
