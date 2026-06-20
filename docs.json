@@ -40,7 +40,7 @@
     }
   ],
   "theme": {
-    "preset": "rose",
-    "primaryOverride": "oklch(0.4467 0.0774 0.0000)"
+    "preset": "emerald",
+    "primaryOverride": "oklch(0.8000 0.3229 0.0000)"
   }
 }
