@@ -6,7 +6,8 @@
       "group": "Get started",
       "pages": [
         "index",
-        "quickstart"
+        "quickstart",
+        "connect-github"
       ]
     },
     {
