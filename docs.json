@@ -41,7 +41,7 @@
     }
   ],
   "theme": {
-    "preset": "emerald",
+    "preset": "default",
     "primaryOverride": "oklch(0.8000 0.3229 0.0000)"
   }
 }
